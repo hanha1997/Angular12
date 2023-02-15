@@ -1,1 +1,14 @@
 <p>about component!</p>
+<ul [ngSwitch]="loginName">
+  <li *ngSwitchCase="'user'">
+    <p>User login...</p>
+  </li>
+  <li *ngSwitchCase="'admin'">
+      Admin login...
+    <app-home></app-home>
+
+  </li>
+  <li *ngSwitchDefault>
+    pls login
+  </li>
+</ul>
