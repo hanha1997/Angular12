@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { OnSalePipe } from './on-sale.pipe';
+import { HighlightDirective } from './Directives/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    OnSalePipe
+    OnSalePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

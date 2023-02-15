@@ -1,4 +1,6 @@
-<p>about component!</p>
+<p appHighlight>about component!</p>
+<p [appHighlight]="myColor">about component!</p>
+<p [appHighlight]="'yellow'">about component!</p>
 <ul [ngSwitch]="loginName">
   <li *ngSwitchCase="'user'">
     <p>User login...</p>

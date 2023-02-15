@@ -6,7 +6,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  public loginName = '12';
+  public loginName = 'admin';
+  public myColor = 'red';
 
   constructor() {
   }
