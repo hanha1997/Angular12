@@ -10,9 +10,9 @@ export class HomeComponent implements OnInit {
   public age = 15;
   public fruits = ["TAO", "CAM", "OI", "NHO"];
   public fruit2 = [
-    {ten:'Táo', gia: 4000},
-    {ten:'Nho', gia:  3000},
-    {ten:'Cam', gia:  5000},
+    {ten:'Táo', gia: 4000, hagia:false},
+    {ten:'Nho', gia:  3000, hagia: true},
+    {ten:'Cam', gia:  5000, hagia: false},
   ];
   constructor() {
   }

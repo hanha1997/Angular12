@@ -10,11 +10,13 @@
       <th>STT</th>
       <th>Tên</th>
       <th>Giá</th>
+      <th>Đại Hạ Giá</th>
     </tr>
     <tr *ngFor="let f of fruit2;let i = index">
       <td>{{i+1}}</td>
-      <td>{{f.ten}}</td>
-      <td [ngClass]="{'so-am': f.gia < 4000}">   {{f.gia}}   </td>
+      <td>{{f.ten | uppercase}}</td>
+      <td [ngClass]="{'so-am': f.gia < 4000}">   {{f.gia | currency:"VND"}}   </td>
+      <td *ngIf="f.hagia">{{ f.hagia | onSale | uppercase }}</td>
     </tr>
   </table>
 </div>
