@@ -1,16 +1,20 @@
 <div class="test">
   <h3>Đây là component home</h3>
-  <h4> Chào bạn {{name}}</h4>
   <br/>
-  <input type="text" [(ngModel)]="age">
-<!--  <h2 *ngIf="age > 50">-->
-<!--    Bạn Già-->
-<!--  </h2>-->
-<!--  <h2 *ngIf="age <= 50">-->
-<!--    Bạn Trẻ-->
-<!--  </h2>-->
-  <div *ngIf="age <= 18 then tre else gia">
+  <div *ngFor="let fruit of fruits;let i = index">
+    {{i+1}}.{{fruit}}
   </div>
-  <ng-template #tre> Trẻ</ng-template>
-  <ng-template #gia> Già</ng-template>
+  <br/>
+  <table class="table2">
+    <tr>
+      <th>STT</th>
+      <th>Tên</th>
+      <th>Giá</th>
+    </tr>
+    <tr *ngFor="let f of fruit2;let i = index">
+      <td>{{i+1}}</td>
+      <td>{{f.ten}}</td>
+      <td [ngClass]="{'so-am': f.gia < 4000}">   {{f.gia}}   </td>
+    </tr>
+  </table>
 </div>
