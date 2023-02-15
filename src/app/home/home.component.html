@@ -2,10 +2,15 @@
   <h3>Đây là component home</h3>
   <h4> Chào bạn {{name}}</h4>
   <br/>
-  <h2 *ngIf="age > 50">
-    Bạn Già
-  </h2>
-  <h2 *ngIf="age <= 50">
-    Bạn Trẻ
-  </h2>
+  <input type="text" [(ngModel)]="age">
+<!--  <h2 *ngIf="age > 50">-->
+<!--    Bạn Già-->
+<!--  </h2>-->
+<!--  <h2 *ngIf="age <= 50">-->
+<!--    Bạn Trẻ-->
+<!--  </h2>-->
+  <div *ngIf="age <= 18 then tre else gia">
+  </div>
+  <ng-template #tre> Trẻ</ng-template>
+  <ng-template #gia> Già</ng-template>
 </div>
