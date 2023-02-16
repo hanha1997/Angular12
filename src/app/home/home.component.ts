@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {CommonService} from "../Services/common.service";
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,8 @@ import {Component, OnInit} from '@angular/core';
 export class HomeComponent implements OnInit {
   public name = 'Hân Hà';
   public age = 15;
+  public counter = 0;
+  public counterBinhPhuong = 0;
   public fruits = ["TAO", "CAM", "OI", "NHO"];
   public fruit2 = [
     {ten:'Táo', gia: 4000, hagia:false},
@@ -65,8 +68,11 @@ export class HomeComponent implements OnInit {
     //c2
     this.districts = this.cities.find(data => data.city === city)?.district || []
   }
-  constructor() {
+  constructor(private common: CommonService) {
   }
   ngOnInit():void {
+    this.counter = this.common.counter;
+    this.counterBinhPhuong = this.common.binhPhuong(this.counter);
+    this.common.counter ++;
   }
 }
