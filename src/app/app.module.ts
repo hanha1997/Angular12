@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { OnSalePipe } from './on-sale.pipe';
 import { HighlightDirective } from './Directives/highlight.directive';
 import { TemplateDrivenFormComponent } from './templates/template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './ReactiveForm/reactive-form/reactive-form.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,12 +18,15 @@ import { TemplateDrivenFormComponent } from './templates/template-driven-form/te
     AboutComponent,
     OnSalePipe,
     HighlightDirective,
-    TemplateDrivenFormComponent
+    TemplateDrivenFormComponent,
+    ReactiveFormComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
