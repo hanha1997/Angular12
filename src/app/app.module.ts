@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { OnSalePipe } from './on-sale.pipe';
 import { HighlightDirective } from './Directives/highlight.directive';
+import { TemplateDrivenFormComponent } from './templates/template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HighlightDirective } from './Directives/highlight.directive';
     HomeComponent,
     AboutComponent,
     OnSalePipe,
-    HighlightDirective
+    HighlightDirective,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,

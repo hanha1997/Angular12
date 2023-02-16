@@ -10,4 +10,8 @@ export class CommonService {
   public binhPhuong(n: number): number{
     return n * n;
   }
+
+  public submitData(data: { name: string; age: number }):void {
+    console.log('Gởi data serve = ', data)
+  }
 }
