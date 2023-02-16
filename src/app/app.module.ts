@@ -13,6 +13,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { GetDataComponent } from './get-data/get-data.component';
 import {HttpClientModule} from "@angular/common/http";
 import { PostDataComponent } from './post-data/post-data.component';
+import { ParentsComponent } from './parents/parents.component';
+import { ChillComponent } from './chill/chill.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,8 @@ import { PostDataComponent } from './post-data/post-data.component';
     ReactiveFormComponent,
     GetDataComponent,
     PostDataComponent,
+    ParentsComponent,
+    ChillComponent,
   ],
   imports: [
     BrowserModule,
