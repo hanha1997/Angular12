@@ -12,6 +12,7 @@ import { ReactiveFormComponent } from './ReactiveForm/reactive-form/reactive-for
 import {ReactiveFormsModule} from "@angular/forms";
 import { GetDataComponent } from './get-data/get-data.component';
 import {HttpClientModule} from "@angular/common/http";
+import { PostDataComponent } from './post-data/post-data.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import {HttpClientModule} from "@angular/common/http";
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
     GetDataComponent,
+    PostDataComponent,
   ],
   imports: [
     BrowserModule,
