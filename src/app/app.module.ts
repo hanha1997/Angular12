@@ -10,7 +10,8 @@ import { HighlightDirective } from './Directives/highlight.directive';
 import { TemplateDrivenFormComponent } from './templates/template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './ReactiveForm/reactive-form/reactive-form.component';
 import {ReactiveFormsModule} from "@angular/forms";
-
+import { GetDataComponent } from './get-data/get-data.component';
+import {HttpClientModule} from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +21,13 @@ import {ReactiveFormsModule} from "@angular/forms";
     HighlightDirective,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
-
+    GetDataComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
