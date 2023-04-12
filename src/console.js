@@ -1,2 +1,2 @@
 console.log('hello');
-console.log('Today is a bad');
+console.log('Today is a bahihd');
