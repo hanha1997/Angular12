@@ -20,9 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: mheap/github-action-required-labels@v4
-          with:
-            mode: exactly
-            count: 0
-            labels: "bug"
+        with:
+          mode: exactly
+          count: 0
+          labels: "bug"
       - run: echo "TODAY=$(date +%y-%m-%d)" >> $GITHUB_ENV
       - run: echo Hello world, today is $TODAY
